@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<ui:composition template="/WEB-INF/templates/layout.xhtml">
+	<ui:define name="header">
+		<h:graphicImage value="/resources/images/logomarca.png"
+			styleClass="logo" />
+	</ui:define>
+	<ui:define name="messages">
+		<h:messages />
+	</ui:define>
+	<ui:define name="container">
+		<h1>Página Principal</h1>
+	</ui:define>
+	
+	<ui:define name="navmenu">
+		<h:link outcome="componentes-visuais" value="Componentes visuais" />
+		<br />
+		<h:link outcome="templates-modularizacao" value="Templates e modularização" />
+		<br />
+		<h:link outcome="navegacao" value="Navegação" />
+		<br />
+		<h:link outcome="cara-ou-coroa" value="Cara ou Coroa" />
+		<br />
+		<h:link outcome="acesso-tipo-de-versao" value="Tipo de Aplicação" />
+		
+	</ui:define>
+</ui:composition>
+</html>

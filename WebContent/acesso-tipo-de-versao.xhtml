@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/index.xhtml">
+	<ui:define name="container">
+		<h:form>
+			<h1>Preferências ao tipo de aplicação</h1>
+			<h:panelGrid columns="2">
+				<h:selectOneMenu value="#{tipoDeAcessoBean.tipoAcessoSelecionado}">
+					<f:selectItem itemLabel="Selecione um tipo..." itemValue="#{null}" />
+					<f:selectItems value="#{tipoDeAcessoBean.tiposDeAcessos}" />
+				</h:selectOneMenu>
+			</h:panelGrid>
+			<br />
+			<h:button outcome="index" value="Início" />
+			<!-- navegação explicita -->
+			<h:commandButton action="#{tipoDeAcessoBean.preferenciaAcesso()}" value="Próximo (nav explicita)" />
+			<h:commandButton action="#{tipoDeAcessoBean.acesso()}" value="Próximo (nav implícita)" />
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

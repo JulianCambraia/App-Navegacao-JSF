@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/index.xhtml">
+	<ui:define name="container">
+		<h:form>
+			<h1>Templates e Modularização</h1>
+			<p> A criação  de um  template é simples. Basta  criar um  arquivo  XHTML e definir o
+      			posicionamento  dos  trechos  estáticos e dinâmicos. O conteúdo  dos  trechos
+        		estáticos  também  deve  ser  definido  da forma  usual  dentro  do  template. Por  outro
+        		lado , o conteúdo  dos  trechos  dinâmicos  só será  definido  nas  telas. Para  indicar
+        		o posicionamento  dos  trechos  dinâmicos , devemos  utilizar a tag ui:insert.</p>
+        			
+			<h:button outcome="index" value="Início"/>
+	       	<h:button outcome="proximo" value="Próximo tópico"/>
+	       	<h:button outcome="anterior" value="Tópico Anterior"/>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

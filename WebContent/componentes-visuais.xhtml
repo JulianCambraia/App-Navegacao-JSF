@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/index.xhtml">
+	<ui:define name="container">
+		<h:form>
+			<h1>Componentes Visuais</h1>
+			<p>
+			No JSF 2, as telas  são  definidas  em  arquivos  xhtml. Os  componentes  visuais  que
+        	constituem  as telas  são  adicionados  por  meio de tags. A especificação  do JSF
+        	define  uma  grande  quantidade  de tags e as  classifica  em  bibliotecas.
+        	As  principais  bibliotecas  de tags do JSF são:</p>
+        	<ul>
+        		<li>Core (http://java.sun.com/jsf/core)
+        		   <ul>
+        		      <li> 
+        				<h:outputLink value="http://www.java.sun.com/jsf/core">
+        					<h:outputText value="http://www.java.sun.com/jsf/core" />
+        				</h:outputLink>
+        			  </li>	  
+	        		</ul>
+        		</li>
+        		<li>HTML (http://java.sun.com/jsf/html)
+        			<ul> 
+        				<li>
+        					<h:outputLink value="http://java.sun.com/jsf/html"> 
+        						<h:outputText value="http://www.java.sun.com/jsf/html" />
+        					</h:outputLink>
+        				</li>
+        			</ul>	 
+        		</li>
+        		
+        		<li>Facelets (http://java.sun.com/jsf/facelets)
+        			<ul>
+        				<li> 
+        					<h:outputLink value="http://java.jsc.com/jsf/facelets">
+        						<h:outputText value="http://java.sun.com/jsf/facelets" />
+        					</h:outputLink>
+        				</li>
+        			</ul> 
+        		</li>
+        	</ul>
+        	<h:button outcome="index" value="Início"/>
+	       	<h:button outcome="proximo" value="Próximo tópico"/>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:templates-modularizacao.xhtml"
+  PATH="templates-modularizacao.xhtml" SHAPE="240,145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:templates-modularizacao.xhtml:0" NAME="item"
+   PATH="templates-modularizacao.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="proximo::#navegacao.xhtml" NAME="output"
+    PATH="/navegacao.xhtml" TARGET="rules:#navegacao.xhtml"
+    TITLE="proximo" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="anterior::componentes-visuais.xhtml"
+    NAME="output1" PATH="componentes-visuais.xhtml"
+    TARGET="rules:componentes-visuais.xhtml" TITLE="anterior" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#templates-modularizacao.xhtml"
+  PATH="/templates-modularizacao.xhtml" SHAPE="240,257,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#navegacao.xhtml" PATH="/navegacao.xhtml"
+  SHAPE="448,353,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:componentes-visuais.xhtml"
+  PATH="componentes-visuais.xhtml" SHAPE="32,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:componentes-visuais.xhtml:0" NAME="item"
+   PATH="componentes-visuais.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="proximo::#templates-modularizacao.xhtml"
+    NAME="output" PATH="/templates-modularizacao.xhtml"
+    TARGET="rules:#templates-modularizacao.xhtml" TITLE="proximo" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:*" PATH="*" SHAPE="32,577,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:*:0" NAME="item" PATH="*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="home::#index.xhtml" NAME="output"
+    PATH="/index.xhtml" TARGET="rules:#index.xhtml" TITLE="home" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#index.xhtml" PATH="/index.xhtml"
+  SHAPE="240,593,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:navegacao.xhtml" PATH="navegacao.xhtml"
+  SHAPE="32,721,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:navegacao.xhtml:0" NAME="item"
+   PATH="navegacao.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="anterior::templates-modularizacao.xhtml"
+    NAME="output" PATH="templates-modularizacao.xhtml"
+    TARGET="rules:templates-modularizacao.xhtml" TITLE="anterior" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:cara-ou-coroa.xhtml"
+  PATH="cara-ou-coroa.xhtml" SHAPE="32,721,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:cara-ou-coroa.xhtml:0" NAME="item"
+   PATH="cara-ou-coroa.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cara::cara.xhtml" NAME="output"
+    PATH="cara.xhtml" TARGET="rules:cara.xhtml" TITLE="cara" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="coroa::coroa.xhtml" NAME="output1"
+    PATH="coroa.xhtml" TARGET="rules:coroa.xhtml" TITLE="coroa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:cara.xhtml" PATH="cara.xhtml"
+  SHAPE="240,737,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:coroa.xhtml" PATH="coroa.xhtml"
+  SHAPE="256,881,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:app-avancado.xhtml" PATH="app-avancado.xhtml"
+  SHAPE="240,993,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#acesso-tipo-de-versao.xhtml"
+  PATH="/acesso-tipo-de-versao.xhtml" SHAPE="32,977,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#acesso-tipo-de-versao.xhtml:0" NAME="item"
+   PATH="/acesso-tipo-de-versao.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="preferencia::app-avancado.xhtml"
+    NAME="output" PATH="app-avancado.xhtml"
+    TARGET="rules:app-avancado.xhtml" TITLE="preferencia" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="preferencia::app-simples.xhtml"
+    NAME="output1" PATH="app-simples.xhtml"
+    TARGET="rules:app-simples.xhtml" TITLE="preferencia" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:app-simples.xhtml" PATH="app-simples.xhtml"
+  SHAPE="256,1137,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
